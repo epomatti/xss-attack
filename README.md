@@ -1,6 +1,6 @@
-# XSS Attack demo
+# Cross-site scripting (XSS) attack demo
 
-This quick implementation demonstrates XSS in action.
+This quick implementation demonstrates Cross-site scripting (XSS) in action.
 
 Start the real server:
 
